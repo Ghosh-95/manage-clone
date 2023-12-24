@@ -230,7 +230,7 @@
 
 
                 <button class="flex justify-center md:justify-start"><a href="#" role="button"
-                        class="py-2 px-6 pt-2 font-bold text-brightRed bg-white rounded hover:bg-gray-500 hover:text-white shadow-2xl md:text-xl transition-all duration-300">Get
+                        class="py-2 px-6 pt-2 font-bold text-brightRed bg-white rounded hover:bg-veryDarkBlue hover:text-white shadow-2xl md:text-xl transition-all duration-300">Get
                         Started</a>
                 </button>
             </article>
@@ -239,9 +239,89 @@
 
     <footer class="bg-veryDarkBlue">
 
-        <div
+        <section
             class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
-        </div>
+            <h2 role="heading" class="hidden">Footer</h2>
+            <!-- Logo and Social Links Container -->
+            <article
+                class="flex flex-col-reverse justify-between items-start md:flex-col md:items-start space-y-12 md:space-y-0">
+
+                <h4 role="heading" class="hidden">Logo and Social Links</h4>
+
+                <p class="mx-auto my-6 text-white text-center md:hidden">Copyright &copy; 2023, @ All Rights Reserved
+                </p>
+
+                <!-- LOGO -->
+                <figure>
+                    <img src="/src/img/logo-white.svg" class="h-8" alt="manage-logo-image">
+                </figure>
+
+
+                <!-- Social Links -->
+
+                <div class="flex justify-center space-x-4">
+                    <a href="">
+                        <img src="/src/img/icon-facebook.svg" class="h-8" alt="facebook-icon">
+                    </a>
+
+                    <a href="">
+                        <img src="/src/img/icon-instagram.svg" class="h-8" alt="instagram-icon">
+                    </a>
+
+                    <a href="">
+                        <img src="/src/img/icon-pinterest.svg" class="h-8" alt="pinterest-icon">
+                    </a>
+
+                    <a href="">
+                        <img src="/src/img/icon-twitter.svg" class="h-8" alt="twitter-icon">
+                    </a>
+
+                    <a href="">
+                        <img src="/src/img/icon-youtube.svg" class="h-8" alt="youtube-icon">
+                    </a>
+
+                </div>
+            </article>
+
+
+            <!-- List Container -->
+            <article class="flex justify-around flex-col md:flex-row md:space-x-32">
+                <h4 role="heading" class="hidden">Page navigation</h4>
+                <!-- Column-1 -->
+                <div class="flex flex-col mr-[5rem] md:mr-0 space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Home</a>
+                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Pricing</a>
+                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Products</a>
+                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">About</a>
+                </div>
+
+                <!-- Column-1 -->
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Careers</a>
+                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Community</a>
+                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Privacy
+                        Policy</a>
+                </div>
+            </article>
+
+            <!-- Input Container -->
+            <article class="flex justify-between items-start md:items-center flex-col">
+                <h4 role="heading" class="hidden">Send us message</h4>
+                <form class="flex space-x-3">
+                    <label for="footer-input">
+                        <input class="flex-1 px-4 py-1 rounded focus:outline-none" type="text"
+                            placeholder="Updates in your inbox">
+                    </label>
+
+                    <button
+                        class="bg-brightRed px-4 py-1 rounded text-white font-bold hover:bg-brightRedLight transition-colors duration-200">Go</button>
+                </form>
+
+                <p class="hidden text-white md:block">
+                    Copyright &copy; 2023, @ All Rights Reserved
+                </p>
+            </article>
+        </section>
 
     </footer>
 </body>

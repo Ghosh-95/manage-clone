@@ -33,7 +33,26 @@
 
                 <button><a href="#" role="button"
                         class="hidden md:block py-2 px-6 pt-2 font-bold text-white bg-brightRed rounded md:text-xl hover:bg-brightRedLight transition-all duration-300">Get
-                        Started</a></button>
+                        Started</a>
+                </button>
+
+                <button id="menu-btn"
+                    class="relative mr-4 bg-white md:hidden focus:outline-none cursor-pointer transition-all duration-1000">
+                    <div
+                        class="cursor-pointer w-5 bg-veryDarkBlue absolute h-1 rounded-full after:w-5 after:h-1 after:bg-veryDarkBlue after:content-[''] after:absolute after:rounded-full after:-translate-y-2 after:-translate-x-2.5 before:content-[''] before:w-5 before:h-1 before:bg-veryDarkBlue before:absolute before:translate-y-2 before:-translate-x-2.5 before:rounded-full before:transition-all before:duration-300 after:transition-all after:duration-300">
+                    </div>
+                </button>
+            </div>
+
+            <div class="md:hidden block">
+                <div id="menu-mobile"
+                    class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="">Pricing</a>
+                    <a href="">Products</a>
+                    <a href="">About Us</a>
+                    <a href="">Careers</a>
+                    <a href="">Community</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -244,7 +263,7 @@
             <h2 role="heading" class="hidden">Footer</h2>
             <!-- Logo and Social Links Container -->
             <article
-                class="flex flex-col-reverse justify-between items-start md:flex-col md:items-start space-y-12 md:space-y-0">
+                class="flex flex-col-reverse justify-between items-start md:flex-col md:items-center space-y-12 md:space-y-0">
 
                 <h4 role="heading" class="hidden">Logo and Social Links</h4>
 
@@ -288,18 +307,23 @@
             <article class="flex justify-around flex-col md:flex-row md:space-x-32">
                 <h4 role="heading" class="hidden">Page navigation</h4>
                 <!-- Column-1 -->
-                <div class="flex flex-col mr-[5rem] md:mr-0 space-y-3 text-white">
-                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Home</a>
-                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Pricing</a>
-                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Products</a>
-                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">About</a>
+                <div class="flex flex-col space-y-3 text-white mb-[1rem]">
+                    <a href="#"
+                        class="inline hover:text-brightRed duration-200 transition-all md:hover:scale-110">Home</a>
+                    <a href="#"
+                        class="inline hover:text-brightRed duration-200 transition-all md:hover:scale-110">Pricing</a>
+                    <a href="#"
+                        class="inline hover:text-brightRed duration-200 transition-all md:hover:scale-110">Products</a>
+                    <a href="#"
+                        class="inline hover:text-brightRed duration-200 transition-all md:hover:scale-110">About</a>
                 </div>
 
                 <!-- Column-1 -->
                 <div class="flex flex-col space-y-3 text-white">
-                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Careers</a>
-                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Community</a>
-                    <a href="#" class="hover:text-brightRed duration-200 transition-all hover:scale-110">Privacy
+                    <a href="#" class="hover:text-brightRed duration-200 transition-all md:hover:scale-110">Careers</a>
+                    <a href="#"
+                        class="hover:text-brightRed duration-200 transition-all md:hover:scale-110">Community</a>
+                    <a href="#" class="hover:text-brightRed duration-200 transition-all md:hover:scale-110">Privacy
                         Policy</a>
                 </div>
             </article>
@@ -309,7 +333,7 @@
                 <h4 role="heading" class="hidden">Send us message</h4>
                 <form class="flex space-x-3">
                     <label for="footer-input">
-                        <input class="flex-1 px-4 py-1 rounded focus:outline-none" type="text"
+                        <input id="footer-input" class="flex-1 px-4 py-1 rounded focus:outline-none" type="text"
                             placeholder="Updates in your inbox">
                     </label>
 
@@ -318,9 +342,11 @@
                 </form>
 
                 <p class="hidden text-white md:block">
-                    Copyright &copy; 2023, @ All Rights Reserved
+                    Copyright &copy; 2023, All Rights Reserved
                 </p>
             </article>
+
+            <!-- Fix hover effect and footer navigation on smaller screen-sizes -->
         </section>
 
     </footer>

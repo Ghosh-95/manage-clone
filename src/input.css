@@ -2,3 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer utilities {
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[360deg]
+    }
+}
+
+;
+
+body {
+    background: url(/src/img/bg-tablet-pattern.svg) no-repeat;
+    background-position: 90% -25%;
+    background-size: 50rem;
+}
+
+#call-to-action {
+    background-image: url(/src/img/bg-simplify-section-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 576px) {
+    body {
+        background-position: 3.125rem -3.125rem;
+        background-size: 31.25rem;
+    }
+
+    #call-to-action {
+        background-image: url(/src/img/bg-simplify-section-mobile.svg);
+    }
+}
